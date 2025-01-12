@@ -20,19 +20,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 
     h1 {
         font-size: 3rem;
         text-transform: uppercase;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 2px var(--text-color);
+        text-align: center;
     }
-
+    h2{
+        font-size: 2.5rem;
+    }
     p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
-
+li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
 
 /************************************ nav *****************************************/
 article, details, figcaption, figure,
@@ -75,7 +90,7 @@ nav .this-page {
 
 /******************************** HOME/INDEX*******************************************/
 #outerMargin {
-    margin: 0 10% 5% 10%;
+    margin: 1% 10% 1% 10%;
 }
 
 .container {
@@ -83,10 +98,13 @@ nav .this-page {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius2);
+    padding: 5%;
 }
 
 .containerPic {
-    margin: 5% 5% 5%;
+    margin: 2% 2% 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,12 +115,15 @@ nav .this-page {
 }
 
 .scroll-container {
-    margin: 1vh;
-    padding: 0;
+    margin: 0;
+    padding: 1%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius2);
+
 }
 
 .scroll-container .header {
@@ -206,3 +227,48 @@ nav .this-page {
     height: auto;
 }
 /*************************** prozess *************************************/
+#prozess .containerText {
+    max-width: 50%;
+    margin-right: 20px
+}
+#prozess .containerPic img{
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+}
+/**************************** footer *******************************/
+footer{
+    background-color: var(--background-color-header);
+    font-size: 1rem;
+}
+.footerContainer{
+    width: 100%;
+    padding: 20px 10px 20px ;
+}
+.footerNav{
+    margin: 10px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:var(--text-color);
+    margin: 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
